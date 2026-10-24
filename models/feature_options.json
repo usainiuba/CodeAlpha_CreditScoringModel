@@ -1,0 +1,176 @@
+{
+  "order": [
+    "checking_status",
+    "duration",
+    "credit_history",
+    "purpose",
+    "credit_amount",
+    "savings_status",
+    "employment",
+    "installment_commitment",
+    "other_parties",
+    "residence_since",
+    "property_magnitude",
+    "age",
+    "other_payment_plans",
+    "housing",
+    "existing_credits",
+    "job",
+    "num_dependents",
+    "own_telephone"
+  ],
+  "columns": {
+    "checking_status": {
+      "type": "categorical",
+      "choices": [
+        "no checking",
+        "<0",
+        "0<=X<200",
+        ">=200"
+      ]
+    },
+    "duration": {
+      "type": "numeric",
+      "min": 4.0,
+      "max": 60.0,
+      "median": 18.0,
+      "integer": true
+    },
+    "credit_history": {
+      "type": "categorical",
+      "choices": [
+        "existing paid",
+        "critical/other existing credit",
+        "delayed previously",
+        "all paid",
+        "no credits/all paid"
+      ]
+    },
+    "purpose": {
+      "type": "categorical",
+      "choices": [
+        "radio/tv",
+        "new car",
+        "furniture/equipment",
+        "used car",
+        "business",
+        "education",
+        "repairs",
+        "domestic appliance",
+        "other",
+        "retraining"
+      ]
+    },
+    "credit_amount": {
+      "type": "numeric",
+      "min": 276.0,
+      "max": 15945.0,
+      "median": 2317.0,
+      "integer": true
+    },
+    "savings_status": {
+      "type": "categorical",
+      "choices": [
+        "<100",
+        "no known savings",
+        "100<=X<500",
+        "500<=X<1000",
+        ">=1000"
+      ]
+    },
+    "employment": {
+      "type": "categorical",
+      "choices": [
+        "1<=X<4",
+        ">=7",
+        "<1",
+        "4<=X<7",
+        "unemployed"
+      ]
+    },
+    "installment_commitment": {
+      "type": "numeric",
+      "min": 1.0,
+      "max": 4.0,
+      "median": 3.0,
+      "integer": true
+    },
+    "other_parties": {
+      "type": "categorical",
+      "choices": [
+        "none",
+        "guarantor",
+        "co applicant"
+      ]
+    },
+    "residence_since": {
+      "type": "numeric",
+      "min": 1.0,
+      "max": 4.0,
+      "median": 3.0,
+      "integer": true
+    },
+    "property_magnitude": {
+      "type": "categorical",
+      "choices": [
+        "car",
+        "real estate",
+        "life insurance",
+        "no known property"
+      ]
+    },
+    "age": {
+      "type": "numeric",
+      "min": 19.0,
+      "max": 75.0,
+      "median": 33.0,
+      "integer": true
+    },
+    "other_payment_plans": {
+      "type": "categorical",
+      "choices": [
+        "none",
+        "bank",
+        "stores"
+      ]
+    },
+    "housing": {
+      "type": "categorical",
+      "choices": [
+        "own",
+        "rent",
+        "for free"
+      ]
+    },
+    "existing_credits": {
+      "type": "numeric",
+      "min": 1.0,
+      "max": 4.0,
+      "median": 1.0,
+      "integer": true
+    },
+    "job": {
+      "type": "categorical",
+      "choices": [
+        "skilled",
+        "unskilled resident",
+        "high qualif/self emp/mgmt",
+        "unemp/unskilled non res"
+      ]
+    },
+    "num_dependents": {
+      "type": "numeric",
+      "min": 1.0,
+      "max": 2.0,
+      "median": 1.0,
+      "integer": true
+    },
+    "own_telephone": {
+      "type": "categorical",
+      "choices": [
+        "none",
+        "yes"
+      ]
+    }
+  }
+}

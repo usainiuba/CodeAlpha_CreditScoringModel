@@ -1,0 +1,13 @@
+# Virtual environment and Python cache
+.venv/
+__pycache__/
+*.pyc
+
+# Downloaded dataset cache (re-created by train_model.py)
+data/
+
+# Editor, OS and secrets
+.vscode/
+.DS_Store
+.streamlit/secrets.toml
+*.log

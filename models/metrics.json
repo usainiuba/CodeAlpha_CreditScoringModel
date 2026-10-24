@@ -1,0 +1,119 @@
+{
+  "dataset": {
+    "name": "German Credit (UCI Statlog, via OpenML credit-g)",
+    "rows": 1000,
+    "bad_risk_share": 0.3,
+    "train_rows": 800,
+    "test_rows": 200
+  },
+  "seed": 42,
+  "threshold": 0.5,
+  "cv_comparison": {
+    "Logistic Regression": {
+      "roc_auc": {
+        "mean": 0.7606,
+        "std": 0.0555
+      },
+      "precision": {
+        "mean": 0.4801,
+        "std": 0.0377
+      },
+      "recall": {
+        "mean": 0.6542,
+        "std": 0.0819
+      },
+      "f1": {
+        "mean": 0.5532,
+        "std": 0.0536
+      }
+    },
+    "Decision Tree": {
+      "roc_auc": {
+        "mean": 0.6873,
+        "std": 0.0593
+      },
+      "precision": {
+        "mean": 0.4478,
+        "std": 0.0337
+      },
+      "recall": {
+        "mean": 0.6542,
+        "std": 0.1477
+      },
+      "f1": {
+        "mean": 0.5273,
+        "std": 0.0718
+      }
+    },
+    "Random Forest": {
+      "roc_auc": {
+        "mean": 0.7978,
+        "std": 0.0406
+      },
+      "precision": {
+        "mean": 0.5509,
+        "std": 0.0368
+      },
+      "recall": {
+        "mean": 0.6458,
+        "std": 0.071
+      },
+      "f1": {
+        "mean": 0.5938,
+        "std": 0.048
+      }
+    }
+  },
+  "selected_model": "Random Forest",
+  "test": {
+    "roc_auc": 0.8023,
+    "precision": 0.5833,
+    "recall": 0.7,
+    "f1": 0.6364,
+    "accuracy": 0.76,
+    "confusion_matrix": [
+      [
+        110,
+        30
+      ],
+      [
+        18,
+        42
+      ]
+    ]
+  },
+  "top_features": [
+    {
+      "feature": "checking_status",
+      "importance": 0.1265
+    },
+    {
+      "feature": "credit_history",
+      "importance": 0.0151
+    },
+    {
+      "feature": "monthly_payment",
+      "importance": 0.011
+    },
+    {
+      "feature": "savings_status",
+      "importance": 0.0075
+    },
+    {
+      "feature": "log_credit_amount",
+      "importance": 0.0075
+    },
+    {
+      "feature": "other_parties",
+      "importance": 0.0072
+    },
+    {
+      "feature": "purpose",
+      "importance": 0.0063
+    },
+    {
+      "feature": "other_payment_plans",
+      "importance": 0.0053
+    }
+  ]
+}
